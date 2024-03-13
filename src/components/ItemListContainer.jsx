@@ -1,5 +1,7 @@
 export const ItemListContainer = (props) => {
-    <div>
-        {props.greetings}
-    </div>
+    return (
+        <h2>
+            {props.greetings}
+        </h2>
+    )   
 }

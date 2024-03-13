@@ -1,14 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { ItemListContainer } from './components/ItemListContainer'
 import { Navbar } from './components/Navbar'
 import './App.css'
-import { ItemListContainer } from './components/ItemListContainer'
+
 
 function App() {
-
-
   return (
     <>
       <Navbar/>
-      <ItemListContainer greetings="hi"/>
+      <ItemListContainer greetings="Trabajamos para vos"/>
     </>
   )
 }
