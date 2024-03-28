@@ -1,0 +1,66 @@
+ 
+    [ 
+        {
+            "id": 1, 
+            "nombre": "Hongos de pino", 
+            "categoria": "natural", 
+            "rutaImagen": "data:image/jpeg;base64,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BcqKdSpTuStRUZlYHa4AOQ9wfvP0daeESrlMvORyfnLw9jFoUqjk2qliAthddtwRptNLD1fMZs53BJJPU6/e8618XeGI+D8+wD0nXmtqVc5CpPbMyn/8ziWFxFib6HT7+s5qxabZ2483JI6x8LuGU6r13qUwxUU1UsAbXz6fS31mh4sweFXGs9FR5gBUrm5c4NiQOltj7HaWv4T8M8rBmoRzVnLepVeVSfexPzE534mL4TF16T2YGpmUqT+F+ZS1rMSAw69OsvSpQkjKXNZXsxYHw/V4g4o0mA5S7u3psTb3sB3a/SVVqbsxQscyZgVuw5tstunY+xlp4bxvEYaoj02qkE/gAcq+4F+4B6envI3jTmnWao9NqT1izkFSqm51Kggct7yJf49LsvS/Lt9EV5DtykAKdBYAAEbe413M9p8MAU89tNrH7jvPMTilc7jL2G5+Q6+pm9w/gONxQBw+FqMDpnIKj2zEhffvLpUyjcyR9apkuiKhAa/NqSNNDf1A0mJjc5mUKv8AMLkX9B39+8uVT4a45VLnDhn3IWol7+2ax+srzcDxdImm2Gqrc7FCb303trLNMoqX2RYwJbW+VTtfc/0+s2DVKKFVjYEix1BDWzAjsestOH+GvEqqq3lpTAAsHcBumpC3t7HtLJg/g47KPOxYVtyqJmUH/uZgT9BI1T9J5yjnPCKVGpVVarvSpuQpZcpyFtASG3S+9iLfKdHb4O1VJNPiDDprTN7epFTX6SzcH+GuDoraqiVm6MVZT6ggOVP0+svNpdL7Mavvo4nW+EOMH4cRRf1bzFP2DTovgrwpT4dSsLNWYDzKmup6Kt9lHQdd+ss8QpSeyHba0z2IiWKiIiAIiIAiIgCIiAIiIAiIgGnxHBJiKT0qgzI6lWHoR9j6zk+E+Dzivz4hThwbiwPmML6KRbKptuQT7TscSGkyVTXhhoUFRFRQAqgKoGwAFgPpITj/AIPwmPYNXpkuBbMrMrW6A2OvzlhiSRsi+B8EpYKn5VEMEBJAZ2e19wMxNh1sNNTPvivBcPi1C16KVQL2zKCRfsdx8pJRAIHAeEcDQN6eFpA9CVzEexa9vlJtVAFgLDtPuIAnlp7EAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAP/9k=", 
+            "detalle": "Hongos secos que se caracterizan por su sabor intenso y terroso, aroma fuerte y ahumado. Secado en horno, su volumen por kilo es mayor, tiene humedad baja y mejor calidad."
+        },
+        {
+            "id": 4, 
+            "nombre": "Aceitunas", 
+            "categoria": "gourmet", 
+            "rutaImagen": "./img/aceitunas.jpg", 
+            "detalle": "Aceitunas rellenas con pasta de pimientos." 
+        },
+        {
+            "id": 7, 
+            "nombre": "Pasta de mani", 
+            "categoria": "gourmet", 
+            "rutaImagen": "./img/pasta-mani.jpg", 
+            "detalle": "Pasta de maní libre de gluten. ODDI'S. Sin azúcares agregados. Contiene azúcares propios de los ingredientes. No contiene sodio."
+        },
+        {
+            "id": 9, 
+            "nombre": "Champignones", 
+            "categoria": "natural", 
+            "rutaImagen": "./img/hongos-champi.jpg", 
+            "detalle": "Champiñones frescos en trozos" 
+        },
+        {
+            "id": 11, 
+            "nombre": "Frutos secos", 
+            "categoria": "natural", 
+            "rutaImagen": "./img/frutos-secos.jpg", 
+            "detalle": "Almendras, Nueces, Castañas de Cajú, Avellanas, Pistacho y Mani" 
+        },
+        {
+            "id": 15, 
+            "nombre": "Fideos secos", 
+            "categoria": "gourmet", 
+            "rutaImagen": "./img/fideos.jpg", 
+            "detalle": "Los Elicoidali Garofalo realzan el sabor de las salsas más densas y consistentes. El acanalado profundo del exterior con patrón en espiral permite que penetre el condimento y que quede retenido. Esta Pasta de Gragnano IGP, trefilada en bronce y rugosa al paladar, mantiene perfectamente la cocción y siempre al dente. Para primeros platos de alta calidad." 
+        },
+        {
+            "id": 18, 
+            "nombre": "Escabeche", 
+            "categoria": "gourmet", 
+            "rutaImagen": "./img/escabeche.jpg",  
+            "detalle": "Berenjenas en escabeche en aceite y vinagre acompaña por distintas especias." 
+        },
+        {
+            "id": 24, 
+            "nombre": "Aceite de oliva extra virgen", 
+            "categoria": "gourmet", 
+            "rutaImagen": "./img/oliva.jpg",  
+            "detalle": "Aceite de Oliva Virgen extra Orgánico. Extracción en frío. Mezcla de variedad de olivas: Arbequina, Coratina, Picual y un promedio de acidez menor a 0,8%. Sin Tacc. Apto celíacos."
+        },
+        {
+            "id": 29, 
+            "nombre": "Chocolate", 
+            "categoria": "gourmet", 
+            "rutaImagen": "./img/chocolate.jpg", 
+            "detalle": "Hershey es una de las compañías de chocolate más antiguas en Estados Unidos, además de un ícono en la cultura estadounidense por su famosa barra de chocolate."}
+]
+ 

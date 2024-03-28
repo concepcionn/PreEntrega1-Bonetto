@@ -9,11 +9,10 @@ export const NavBar = () => {
         <> 
             <Navbar bg="light" data-bs-theme="light">
                 <Container>
-                    <Navbar.Brand href="#home">BARO'S GOURMET</Navbar.Brand>
+                    <Navbar.Brand href="/">BARO'S GOURMET</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Importados</Nav.Link>
-                        <Nav.Link href="#pricing">Naturales</Nav.Link>
+                        <Nav.Link href="categoria/natural">Naturales</Nav.Link>
+                        <Nav.Link href="/categoria/gourmet">Gourmet</Nav.Link>
                     </Nav>
                     <CardWidget/>
                 </Container>

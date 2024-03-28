@@ -1,11 +1,29 @@
-import Container from 'react-bootstrap/Container'
+import { useEffect, useState } from 'react'
 
-export const ItemListContainer = (props) => {
+import Container from 'react-bootstrap/Container'
+import { ItemList } from "./ItemList"
+
+
+import data from "../data/productos.json"
+
+export const ItemListContainer = () => {
+
+    const [productos, setProductos] = useState([])
+
+    useEffect(() => {
+        const get = new Promise((resolve, reject) => {
+            setTimeout(() => resolve(data), 2000)
+        })
+
+        get.then((data) => setProductos(data))
+    }, [])
+
+
+    
+
     return (
-       <Container className="mt-3">
-            <h2>
-                {props.greetings}
-            </h2>
-       </Container> 
+        <Container className="mt-3">
+        <ItemList productos={productos}/> 
+     </Container>
     )   
 }
