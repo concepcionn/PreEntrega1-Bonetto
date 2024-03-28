@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom' 
 
 import Container from 'react-bootstrap/Container'
-import { ItemList } from "./ItemList"
+
 
 
 import data from "../data/productos.json"
 
-export const ItemListContainer = () => {
+export const ItemDetailContainer = () => {
 
-    const [productos, setProductos] = useState([])
+    const [producto, setProducto] = useState(null)
 
     const {id} = useParams
 
@@ -19,19 +19,20 @@ export const ItemListContainer = () => {
         })
 
         get.then((data) => {
-            if(id){
-                const dataFiltrada = data.filter((data) => data.categoria === id)
-                setProductos(dataFiltrada)
-            } else {
-                setProductos(data)
-            }
+            
+                const dataFiltrada = data.find((data) => data.id === Number(id))
+                setProducto(dataFiltrada)
+           
         })
     }, [id])
+
+    if(!producto) return null 
     
 
     return (
         <Container className="mt-3">
-        <ItemList productos={productos}/> 
+       <div>{producto.nombre}</div> 
+       <img src="{producto.rutaImagen" alt="{producto.nombre}" />
      </Container>
     )   
 }
