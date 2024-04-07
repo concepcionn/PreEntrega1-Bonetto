@@ -9,8 +9,6 @@ export const Item = ({producto}) => {
       <Card.Title>{producto.nombre}</Card.Title>
       <Card.Text>{producto.detalle}
       </Card.Text>
-      <Card.Text>{producto.detalle}
-      </Card.Text>
       <Link to={`/item/${producto.id}`}><Button variant="primary">{producto.name}</Button></Link>
     </Card.Body>
   </Card>
