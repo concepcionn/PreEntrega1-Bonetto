@@ -30,7 +30,7 @@ export const ItemListContainer = () => {
     
 
     return (
-        <Container className="mt-3 d-flex flex-wrap">
+        <Container className="mt-3 d-flex">
         <ItemList productos={productos}/> 
      </Container>
     )   
