@@ -11,7 +11,7 @@ export const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
 
-    const {id} = useParams
+    const {id} = useParams()
 
     useEffect(() => {
         const get = new Promise((resolve, reject) => {

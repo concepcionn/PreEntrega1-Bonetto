@@ -11,7 +11,7 @@ export const ItemDetailContainer = () => {
 
     const [producto, setProducto] = useState(null)
 
-    const {id} = useParams
+    const {id} = useParams()
 
     useEffect(() => {
         const get = new Promise((resolve, reject) => {
@@ -32,7 +32,7 @@ export const ItemDetailContainer = () => {
     return (
         <Container className="mt-3">
        <div>{producto.nombre}</div> 
-       <img src="{producto.rutaImagen" alt="{producto.nombre}" />
+       <img src={producto.rutaImagen} alt={producto.nombre}/>
      </Container>
     )   
 }
