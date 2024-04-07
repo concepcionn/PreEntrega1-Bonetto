@@ -31,8 +31,8 @@ export const ItemDetailContainer = () => {
 
     return (
         <Container className="mt-3">
-       <div>{producto.nombre}</div> 
-       <img src={producto.rutaImagen} alt={producto.nombre}/>
+            <div>{producto.nombre}</div> 
+            <img src={producto.rutaImagen} alt={producto.nombre}/>
      </Container>
     )   
 }

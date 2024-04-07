@@ -10,9 +10,12 @@ export const NavBar = () => {
         <> 
             <Navbar bg="light" data-bs-theme="light">
                 <Container>
-                    <Navbar.Brand to="/">BARO'S GOURMET</Navbar.Brand>
+                    <a to="/">
+                        <Navbar.Brand>BARO'S GOURMET</Navbar.Brand>
+                    </a>
                     <Nav className="me-auto">
-                        <Nav.Link to="categoria/natural" as={NavLink}>Naturales</Nav.Link>
+                        <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
+                        <Nav.Link to="/categoria/natural" as={NavLink}>Naturales</Nav.Link>
                         <Nav.Link to="/categoria/gourmet" as={NavLink}>Gourmet</Nav.Link>
                     </Nav>
                     <CardWidget/>
