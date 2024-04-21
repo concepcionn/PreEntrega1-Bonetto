@@ -4,8 +4,14 @@ import { useParams } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import { ItemList } from "./ItemList"
 
-
-import data from "../data/productos.json"
+import {
+    getFirestore,
+    collection,
+    getDocs,
+    query,
+    where,
+  } from "firebase/firestore"; 
+  
 
 export const ItemListContainer = () => {
 
@@ -14,7 +20,25 @@ export const ItemListContainer = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        const get = new Promise((resolve, reject) => {
+    
+        const db = getFirestore();
+
+        let refCollection; 
+        
+        if (!id) refCollection = collection(db, "items");
+        else {
+            refCollection = query(collection(db, "items"), where("categoryId", "==", id))
+        }
+        getDocs(refCollection).then((snapshot) => {
+            setProductos (   
+            snapshot.docs.map((doc) => {
+            return { id: doc.id, ...doc.data() };
+          })
+        );
+    });
+        
+        
+        /*const get = new Promise((resolve, reject) => {
             setTimeout(() => resolve(data), 2000)
         })
 
@@ -25,7 +49,7 @@ export const ItemListContainer = () => {
             } else {
                 setProductos(data)
             }
-        })
+        })*/
     }, [id])
     
 

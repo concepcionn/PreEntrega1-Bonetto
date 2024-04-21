@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom' 
-
 import Container from 'react-bootstrap/Container'
-
-
-
-import data from "../data/productos.json"
+import { getFirestore, getDoc, doc } from "firebase/firestore";
 
 export const ItemDetailContainer = () => {
 
@@ -24,6 +20,15 @@ export const ItemDetailContainer = () => {
                 setProducto(dataFiltrada)
            
         })
+
+/*const db = getFirestore();
+
+const refDoc = doc(db, "items", id);
+
+getDoc(refDoc).then((snapshot) => {
+  console.log({ id: snapshot.id, ...snapshot.data() });
+});*/
+
     }, [id])
 
     if(!producto) return null 
